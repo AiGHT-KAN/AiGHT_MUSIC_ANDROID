@@ -9,8 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".message"></activity>
-        <activity android:name=".signUpAuthenticated"></activity>
+        <activity android:name=".home"></activity>
+        <activity android:name=".message" />
+        <activity android:name=".signUpAuthenticated" />
         <activity android:name=".signUpWithUs" />
         <activity android:name=".signIn" />
         <activity android:name=".first_signup" />

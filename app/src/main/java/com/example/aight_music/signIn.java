@@ -20,7 +20,8 @@ public class signIn extends AppCompatActivity {
         sta.setOnSlideCompleteListener(new SlideToActView.OnSlideCompleteListener() {
             @Override
             public void onSlideComplete(SlideToActView slideToActView) {
-                startActivity(new Intent(signIn.this,message.class));
+                startActivity(new Intent(signIn.this,home.class));
+                finish();
             }
         });
     }

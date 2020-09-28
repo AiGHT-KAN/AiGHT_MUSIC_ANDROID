@@ -48,7 +48,7 @@
         android:id="@+id/editTextTextPersonName"
         android:layout_width="300dp"
         android:layout_height="50dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginBottom="40dp"
         android:background="@drawable/tfbg"
         android:ems="10"
         android:fontFamily="@font/advent_pro_medium"
@@ -57,15 +57,15 @@
         android:paddingLeft="25dp"
         android:textColor="#FFFFFF"
         android:textColorHint="#80FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/editTextTextPassword"
         android:layout_width="300dp"
         android:layout_height="50dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginBottom="60dp"
         android:background="@drawable/tfbg"
         android:ems="10"
         android:fontFamily="@font/advent_pro_medium"
@@ -74,24 +74,24 @@
         android:paddingLeft="25dp"
         android:textColor="#FFFFFF"
         android:textColorHint="#80FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/ex"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <com.ncorti.slidetoact.SlideToActView
         android:id="@+id/ex"
         android:layout_width="300dp"
         android:layout_height="50dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginBottom="50dp"
+        app:animation_duration="400"
         app:area_margin="8dp"
         app:icon_margin="8dp"
         app:inner_color="@android:color/white"
-        app:animation_duration="400"
-        app:slider_height="52dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword"
         app:outer_color="#EAA0A2"
+        app:slider_height="52dp"
         app:slider_icon_color="#2C3050"
         app:text="SIGN IN"
         app:text_appearance="@font/advent_pro_medium"

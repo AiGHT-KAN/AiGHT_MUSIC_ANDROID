@@ -7,74 +7,16 @@
     android:background="#2C3050"
     tools:context=".first_signup">
 
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/component_1" />
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="300dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="100dp"
-        android:background="@drawable/signupus"
-        android:clickable="true"
-        android:fontFamily="@font/advent_pro_medium"
-        android:onClick="signUpWithUs"
-        android:text="Make an account with us"
-        android:textColor="#FFFFFF"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="300dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="70dp"
-        android:background="@drawable/signupfb"
-        android:fontFamily="@font/advent_pro_medium"
-        android:text="facebook"
-        android:clickable="true"
-        android:onClick="signUpAuth"
-        android:textColor="#FFFFFF"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="300dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="70dp"
-        android:background="@drawable/signupg"
-        android:fontFamily="@font/advent_pro_medium"
-        android:text="google"
-        android:clickable="true"
-        android:onClick="signUpAuth"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
-
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginBottom="30dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="40dp"
         android:clickable="true"
         android:fontFamily="@font/advent_pro_medium"
+        android:gravity="bottom|right"
         android:onClick="signIn"
         android:text="Already have an account? Sign In"
         android:textColor="#FFFFFF"
@@ -82,17 +24,69 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="230dp"
-        android:layout_height="2dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginBottom="30dp"
-        android:background="#FFFFFF"
-        android:clickable="true"
-        android:onClick="signIn"
-        android:text="TextView"
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:foregroundGravity="top|center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/component_1" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="100dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.326"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginBottom="70dp"
+            android:background="@drawable/signupus"
+            android:clickable="true"
+            android:fontFamily="@font/advent_pro_medium"
+            android:onClick="signUpWithUs"
+            android:text="Make an account with us"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="70dp"
+            android:background="@drawable/signupfb"
+            android:clickable="true"
+            android:fontFamily="@font/advent_pro_medium"
+            android:onClick="signUpAuth"
+            android:text="facebook"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="150dp"
+            android:background="@drawable/signupg"
+            android:clickable="true"
+            android:fontFamily="@font/advent_pro_medium"
+            android:onClick="signUpAuth"
+            android:text="google"
+            android:textSize="24sp" />
+
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

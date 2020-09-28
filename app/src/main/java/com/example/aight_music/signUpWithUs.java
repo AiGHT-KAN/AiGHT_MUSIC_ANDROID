@@ -19,7 +19,8 @@ public class signUpWithUs extends AppCompatActivity {
         sta.setOnSlideCompleteListener(new SlideToActView.OnSlideCompleteListener() {
             @Override
             public void onSlideComplete(SlideToActView slideToActView) {
-                startActivity(new Intent(signUpWithUs.this,message.class));
+                startActivity(new Intent(signUpWithUs.this,home.class));
+                finish();
             }
         });
     }

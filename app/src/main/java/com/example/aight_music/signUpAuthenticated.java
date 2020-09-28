@@ -18,7 +18,8 @@ public class signUpAuthenticated extends AppCompatActivity {
         sta.setOnSlideCompleteListener(new SlideToActView.OnSlideCompleteListener() {
             @Override
             public void onSlideComplete(SlideToActView slideToActView) {
-                startActivity(new Intent(signUpAuthenticated.this,message.class));
+                startActivity(new Intent(signUpAuthenticated.this,home.class));
+                finish();
             }
         });
     }
